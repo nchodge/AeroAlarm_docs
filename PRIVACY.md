@@ -1,12 +1,14 @@
 # AeroAlarm Privacy Policy
 
-**Effective date:** September 1, 2026  
+**Effective date:** September 8, 2026  
 **App:** AeroAlarm  
-**Bundle ID:** com.aeroalarm.app
+**Developer:** Northern Hangar  
+**iOS bundle ID:** com.northernhangar.aeroalarm  
+**Android package:** com.aeroalarm.app
 
 ## Overview
 
-AeroAlarm is a UTC (Zulu time) alarm clock. We designed it to work without accounts, analytics, or cloud sync. Your alarm data stays on your device.
+AeroAlarm is a UTC alarm clock. It works without accounts, analytics, or cloud sync. Your alarm data stays on your device.
 
 ## Data We Collect
 
@@ -20,9 +22,12 @@ AeroAlarm stores the following locally on your phone or tablet so the app can fu
 
 | Data | Purpose | Location |
 |------|---------|----------|
-| Alarm times and on/off state | Schedule and display your alarms | On-device storage (AsyncStorage / app preferences) |
+| Alarm times and on/off state | Schedule and display your alarms | On-device storage |
+| Reference timezone and recent airports | Show the clock and alarm times in UTC or a selected airport zone | On-device storage |
 | Snooze state | Resume countdown after app restart | On-device storage |
 | Haptic-before-sound preference | Apply your alarm sound setting | On-device storage |
+
+On iOS, the app also keeps a copy of this data in an on-device App Group so Siri and Shortcuts can set or read alarms without sending data off the device.
 
 This data is not uploaded to us or any third party by the app.
 
@@ -41,7 +46,7 @@ Granting these permissions does not send your data to AeroAlarm developers.
 
 AeroAlarm does not include advertising SDKs, analytics SDKs, or social login.
 
-Alarm scheduling uses native iOS and Android alarm APIs through the app’s built-in components. Those operating systems may process alarm schedules according to their own privacy policies.
+Alarm scheduling uses native iOS and Android alarm APIs. Those operating systems may process alarm schedules according to their own privacy policies. Siri and Shortcuts run on the device and do not send your AeroAlarm data to Northern Hangar.
 
 ## Children’s Privacy
 
@@ -53,6 +58,7 @@ All app data remains on your device until you:
 
 - Delete individual alarms in the app
 - Turn alarms off
+- Change or clear the reference timezone
 - Uninstall AeroAlarm
 
 Uninstalling the app removes locally stored alarm data from your device.
