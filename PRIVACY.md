@@ -4,7 +4,7 @@
 **App:** AeroAlarm  
 **Developer:** Northern Hangar  
 **iOS bundle ID:** com.northernhangar.aeroalarm  
-**Android package:** com.aeroalarm.app
+**Android package:** com.northernhangar.aeroalarm
 
 ## Overview
 
